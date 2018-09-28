@@ -1,0 +1,27 @@
+{
+  "provisioners": [
+
+  ],
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "<tab> text ks=http://{{ .HTTPID }}:{ .HTTPPort }}/ks.cfg<enter><wait>"
+      ],
+      "boot_wait": "10s",
+      "disk_size": 20480,
+      "guest_os_type": "Linux26_64",
+      "headless": true,
+      "http_directory": "http",
+      "iso_urls": [
+        "iso/coreos_production_iso_image.iso",
+        "https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso"
+      ],
+      "iso_checksum_type": "md5",
+      "iso_checksum": "4f9f1a01bcacfeececa38a54771602e8",
+      "ssh_username": "vagrant",
+      "ssh_password": "vagrant",
+      "ssh_port": 22
+    }
+  ]
+}
