@@ -1,12 +1,24 @@
 #!/usr/bin/env bash
 
-MISSING=false
+MISSING=()
 
-if ! [ command -v vagrant >/dev/null 2>&1 ]; then
-  echo "Did not find vagrant"
-  MISSING=true
-fi
+check() {
+  TARGET=$1
+  command -v $TARGET >/dev/null 2>&1
+  local RESULT=$?
+  if [ $RESULT != 0 ]; then
+    MISSING+=($TARGET)
+  fi
+}
 
-if [ $MISSING == true ]; then
+check "nmap"
+check "vagrant"
+
+if ! [ ${#MISSING[@]} -eq 0 ]; then
+  echo "Missing prerequisites:"
+  for TARGET in $MISSING; do
+    echo "  $TARGET"
+  done
+
   exit 1
 fi

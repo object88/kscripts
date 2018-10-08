@@ -20,11 +20,11 @@ ssh-keygen -t rsa -b 4096 -q -f ~/.ssh/la_cka -N "" -n user
 for TARGET in $TARGETS
 do
   echo "Copying public key to '$TARGET'"
-  scp -o StrictHostKeyChecking=no "$HOME/.ssh/la_cka.pub" "user@$TARGET:/home/user/.ssh/id_rsa.pub"
+  scp "$HOME/.ssh/la_cka.pub" "user@$TARGET:/home/user/.ssh/id_rsa.pub"
   echo "Copied, adding to authorized hosts"
-  ssh -o StrictHostKeyChecking=no "user@$TARGET" 'cat /home/user/.ssh/id_rsa.pub >> /home/user/.ssh/authorized_keys'
+  ssh "$TARGET" 'cat /home/user/.ssh/id_rsa.pub >> /home/user/.ssh/authorized_keys'
   echo "Added, validating..."
-  ssh -i "$HOME/.ssh/la_cka" -o StrictHostKeyChecking=no -o IdentitiesOnly=yes "user@$TARGET" echo "foo"
+  ssh "$TARGET" echo "foo"
   echo "Validated."
   echo ""
 done
