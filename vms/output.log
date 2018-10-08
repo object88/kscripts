@@ -1,0 +1,588 @@
+2018/10/07 20:54:51 [INFO] Packer version: 1.3.1
+2018/10/07 20:54:51 Packer Target OS/Arch: darwin amd64
+2018/10/07 20:54:51 Built with Go Version: go1.11
+2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 Using internal plugin for lxd
+2018/10/07 20:54:51 Using internal plugin for scaleway
+2018/10/07 20:54:51 Using internal plugin for hyperv-vmcx
+2018/10/07 20:54:51 Using internal plugin for file
+2018/10/07 20:54:51 Using internal plugin for ncloud
+2018/10/07 20:54:51 Using internal plugin for null
+2018/10/07 20:54:51 Using internal plugin for profitbricks
+2018/10/07 20:54:51 Using internal plugin for virtualbox-ovf
+2018/10/07 20:54:51 Using internal plugin for cloudstack
+2018/10/07 20:54:51 Using internal plugin for vmware-iso
+2018/10/07 20:54:51 Using internal plugin for qemu
+2018/10/07 20:54:51 Using internal plugin for digitalocean
+2018/10/07 20:54:51 Using internal plugin for googlecompute
+2018/10/07 20:54:51 Using internal plugin for lxc
+2018/10/07 20:54:51 Using internal plugin for openstack
+2018/10/07 20:54:51 Using internal plugin for oracle-classic
+2018/10/07 20:54:51 Using internal plugin for oracle-oci
+2018/10/07 20:54:51 Using internal plugin for parallels-iso
+2018/10/07 20:54:51 Using internal plugin for alicloud-ecs
+2018/10/07 20:54:51 Using internal plugin for parallels-pvm
+2018/10/07 20:54:51 Using internal plugin for triton
+2018/10/07 20:54:51 Using internal plugin for virtualbox-iso
+2018/10/07 20:54:51 Using internal plugin for vmware-vmx
+2018/10/07 20:54:51 Using internal plugin for oneandone
+2018/10/07 20:54:51 Using internal plugin for amazon-ebsvolume
+2018/10/07 20:54:51 Using internal plugin for amazon-instance
+2018/10/07 20:54:51 Using internal plugin for azure-arm
+2018/10/07 20:54:51 Using internal plugin for docker
+2018/10/07 20:54:51 Using internal plugin for hyperv-iso
+2018/10/07 20:54:51 Using internal plugin for amazon-chroot
+2018/10/07 20:54:51 Using internal plugin for amazon-ebssurrogate
+2018/10/07 20:54:51 Using internal plugin for amazon-ebs
+2018/10/07 20:54:51 Using internal plugin for ansible-local
+2018/10/07 20:54:51 Using internal plugin for windows-shell
+2018/10/07 20:54:51 Using internal plugin for file
+2018/10/07 20:54:51 Using internal plugin for shell-local
+2018/10/07 20:54:51 Using internal plugin for windows-restart
+2018/10/07 20:54:51 Using internal plugin for ansible
+2018/10/07 20:54:51 Using internal plugin for powershell
+2018/10/07 20:54:51 Using internal plugin for puppet-server
+2018/10/07 20:54:51 Using internal plugin for salt-masterless
+2018/10/07 20:54:51 Using internal plugin for shell
+2018/10/07 20:54:51 Using internal plugin for chef-client
+2018/10/07 20:54:51 Using internal plugin for chef-solo
+2018/10/07 20:54:51 Using internal plugin for converge
+2018/10/07 20:54:51 Using internal plugin for puppet-masterless
+2018/10/07 20:54:51 Using internal plugin for vsphere-template
+2018/10/07 20:54:51 Using internal plugin for amazon-import
+2018/10/07 20:54:51 Using internal plugin for docker-save
+2018/10/07 20:54:51 Using internal plugin for googlecompute-import
+2018/10/07 20:54:51 Using internal plugin for manifest
+2018/10/07 20:54:51 Using internal plugin for alicloud-import
+2018/10/07 20:54:51 Using internal plugin for artifice
+2018/10/07 20:54:51 Using internal plugin for docker-push
+2018/10/07 20:54:51 Using internal plugin for vagrant-cloud
+2018/10/07 20:54:51 Using internal plugin for googlecompute-export
+2018/10/07 20:54:51 Using internal plugin for vagrant
+2018/10/07 20:54:51 Using internal plugin for shell-local
+2018/10/07 20:54:51 Using internal plugin for vsphere
+2018/10/07 20:54:51 Using internal plugin for checksum
+2018/10/07 20:54:51 Using internal plugin for compress
+2018/10/07 20:54:51 Using internal plugin for docker-import
+2018/10/07 20:54:51 Using internal plugin for docker-tag
+2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 Attempting to open config file: /Users/object88/.packerconfig
+2018/10/07 20:54:51 [WARN] Config file doesn't exist: /Users/object88/.packerconfig
+2018/10/07 20:54:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[oracle-oci:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci amazon-chroot:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot virtualbox-ovf:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf vmware-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso alicloud-ecs:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs triton:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton oneandone:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone hyperv-vmcx:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx digitalocean:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean lxc:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc azure-arm:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm amazon-ebssurrogate:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate virtualbox-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso vmware-vmx:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx lxd:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd qemu:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu googlecompute:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute openstack:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack parallels-pvm:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm amazon-instance:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance hyperv-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso amazon-ebs:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs scaleway:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-scaleway file:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file ncloud:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-ncloud cloudstack:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack oracle-classic:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-classic parallels-iso:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso amazon-ebsvolume:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume docker:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker null:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null profitbricks:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks] PostProcessors:map[docker-tag:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag vsphere-template:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template vagrant:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vsphere:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere docker-push:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push compress:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress amazon-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import alicloud-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import artifice:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice googlecompute-export:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export shell-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local docker-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import vagrant-cloud:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud checksum:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum docker-save:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save googlecompute-import:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-import manifest:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest] Provisioners:map[windows-shell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell shell-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local chef-client:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client windows-restart:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart powershell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-server:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server converge:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge ansible-local:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local ansible:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible chef-solo:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo file:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file salt-masterless:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless shell:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell puppet-masterless:/usr/local/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless]}
+2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 Setting cache directory: /Users/object88/kscripts/vms/packer_cache
+2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 Loading builder: virtualbox-iso
+2018/10/07 20:54:51 Plugin could not be found. Checking same directory as executable.
+2018/10/07 20:54:51 Current exe path: /usr/local/bin/packer
+2018/10/07 20:54:51 Creating plugin client for path: /usr/local/bin/packer
+2018/10/07 20:54:51 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-builder-virtualbox-iso"}
+2018/10/07 20:54:51 Waiting for RPC address for: /usr/local/bin/packer
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [INFO] Packer version: 1.3.1
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer Target OS/Arch: darwin amd64
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Built with Go Version: go1.11
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Attempting to open config file: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [WARN] Config file doesn't exist: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Setting cache directory: /Users/object88/kscripts/vms/packer_cache
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 args: []string{"packer-builder-virtualbox-iso"}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin minimum port: 10000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin maximum port: 25000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin address: unix /var/folders/73/730ffkn9047_3rtkmk7_x1380000gn/T/packer-plugin999937937
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Waiting for connection...
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Serving a plugin connection...
+2018/10/07 20:54:51 Loading provisioner: file
+2018/10/07 20:54:51 Plugin could not be found. Checking same directory as executable.
+2018/10/07 20:54:51 Current exe path: /usr/local/bin/packer
+2018/10/07 20:54:51 Creating plugin client for path: /usr/local/bin/packer
+2018/10/07 20:54:51 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-file"}
+2018/10/07 20:54:51 Waiting for RPC address for: /usr/local/bin/packer
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [INFO] Packer version: 1.3.1
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer Target OS/Arch: darwin amd64
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Built with Go Version: go1.11
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Attempting to open config file: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [WARN] Config file doesn't exist: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Setting cache directory: /Users/object88/kscripts/vms/packer_cache
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 args: []string{"packer-provisioner-file"}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin minimum port: 10000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin maximum port: 25000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin address: unix /var/folders/73/730ffkn9047_3rtkmk7_x1380000gn/T/packer-plugin264689949
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Waiting for connection...
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Serving a plugin connection...
+2018/10/07 20:54:51 Loading provisioner: file
+2018/10/07 20:54:51 Plugin could not be found. Checking same directory as executable.
+2018/10/07 20:54:51 Current exe path: /usr/local/bin/packer
+2018/10/07 20:54:51 Creating plugin client for path: /usr/local/bin/packer
+2018/10/07 20:54:51 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-file"}
+2018/10/07 20:54:51 Waiting for RPC address for: /usr/local/bin/packer
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [INFO] Packer version: 1.3.1
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer Target OS/Arch: darwin amd64
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Built with Go Version: go1.11
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Attempting to open config file: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [WARN] Config file doesn't exist: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Setting cache directory: /Users/object88/kscripts/vms/packer_cache
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 args: []string{"packer-provisioner-file"}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin minimum port: 10000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin maximum port: 25000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin address: unix /var/folders/73/730ffkn9047_3rtkmk7_x1380000gn/T/packer-plugin940112545
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Waiting for connection...
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Serving a plugin connection...
+2018/10/07 20:54:51 Loading post-processor: vagrant
+2018/10/07 20:54:51 Plugin could not be found. Checking same directory as executable.
+2018/10/07 20:54:51 Current exe path: /usr/local/bin/packer
+2018/10/07 20:54:51 Creating plugin client for path: /usr/local/bin/packer
+2018/10/07 20:54:51 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-post-processor-vagrant"}
+2018/10/07 20:54:51 Waiting for RPC address for: /usr/local/bin/packer
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [INFO] Packer version: 1.3.1
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer Target OS/Arch: darwin amd64
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Built with Go Version: go1.11
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Attempting to open config file: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [WARN] Config file doesn't exist: /Users/object88/.packerconfig
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Setting cache directory: /Users/object88/kscripts/vms/packer_cache
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Detected home directory from env var: /Users/object88
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 args: []string{"packer-post-processor-vagrant"}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin minimum port: 10000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin maximum port: 25000
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Plugin address: unix /var/folders/73/730ffkn9047_3rtkmk7_x1380000gn/T/packer-plugin104360413
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Waiting for connection...
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Serving a plugin connection...
+2018/10/07 20:54:51 ui: [1;32mvirtualbox-iso output will be in this color.[0m
+2018/10/07 20:54:51 ui: 
+2018/10/07 20:54:51 Build debug mode: false
+2018/10/07 20:54:51 Force build: false
+2018/10/07 20:54:51 On error: 
+2018/10/07 20:54:51 Preparing build: virtualbox-iso
+2018/10/07 20:54:51 Waiting on builds to complete...
+2018/10/07 20:54:51 Starting build run: virtualbox-iso
+2018/10/07 20:54:51 Running builder: virtualbox-iso
+2018/10/07 20:54:51 [INFO] (telemetry) Starting builder virtualbox-iso
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 VBoxManage path: /usr/local/bin/VBoxManage
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 VBoxManage --version output: 5.2.18r124319
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 VirtualBox version: 5.2.18
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 guest_additions_url is blank; querying driver for iso.
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Found Default Guest Additions ISO: /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Guest additions URL: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2018/10/07 20:54:51 ui: [1;32m==> virtualbox-iso: Retrieving Guest additions[0m
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Acquiring lock to download: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Parsed URL: &url.URL{Scheme:"file", Opaque:"", User:(*url.Userinfo)(nil), Host:"", Path:"/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:""}
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 [DEBUG] Using local file: /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2018/10/07 20:54:51 ui: [0;32m    virtualbox-iso: Using file in-place: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso[0m
+2018/10/07 20:54:51 ui: [1;32m==> virtualbox-iso: Retrieving ISO[0m
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Acquiring lock to download: file://./iso/coreos_production_iso_image.iso
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Acquiring lock to download: https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso
+2018/10/07 20:54:51 packer: 2018/10/07 20:54:51 Verifying checksum of /Users/object88/kscripts/vms/packer_cache/d09d13fd2e5968ac7926627a5d9ac7ed4be7bee686cf1e54ff7f2190a081bed1.iso
+2018/10/07 20:54:52 ui: [0;32m    virtualbox-iso: Found already downloaded, initial checksum matched, no download needed: https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 No floppy files specified. Floppy disk will not be made.
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Trying port: 8403
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Starting HTTP server on port 8403[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Suppressing annoying messages in VirtualBox
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"setextradata", "global", "GUI/RegistrationData", "triesLeft=0"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"setextradata", "global", "GUI/SuppressMessages", "confirmInputCapture,remindAboutAutoCapture,remindAboutMouseIntegrationOff,remindAboutMouseIntegrationOn,remindAboutWrongColorDepth"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateCheckCount", "60"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateDate", "1 d, 2019-01-01, stable"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Creating virtual machine...[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"createvm", "--name", "packer-centos-6.5-x86_64", "--ostype", "Linux26_64", "--register"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout: Virtual machine 'packer-centos-6.5-x86_64' is created and registered.
+2018/10/07 20:54:52 packer: UUID: 1557dd9c-3a7c-4dea-9f3e-a33dbdf40fd8
+2018/10/07 20:54:52 packer: Settings file: '/Users/object88/VirtualBox VMs/packer-centos-6.5-x86_64/packer-centos-6.5-x86_64.vbox'
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--boot1", "disk", "--boot2", "dvd", "--boot3", "none", "--boot4", "none"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--cpus", "1"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--memory", "512"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Creating hard drive...[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"createhd", "--filename", "output-virtualbox-iso/packer-centos-6.5-x86_64.vdi", "--size", "20480", "--format", "VDI", "--variant", "Standard"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout: Medium created. UUID: 199cf400-7324-489f-a955-8e78ceb0b12e
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"storagectl", "packer-centos-6.5-x86_64", "--name", "IDE Controller", "--add", "ide"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"storageattach", "packer-centos-6.5-x86_64", "--storagectl", "IDE Controller", "--port", "0", "--device", "0", "--type", "hdd", "--medium", "output-virtualbox-iso/packer-centos-6.5-x86_64.vdi", "--nonrotational", "off", "--discard", "off"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"storageattach", "packer-centos-6.5-x86_64", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--type", "dvddrive", "--medium", "/Users/object88/kscripts/vms/packer_cache/d09d13fd2e5968ac7926627a5d9ac7ed4be7bee686cf1e54ff7f2190a081bed1.iso"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Not attaching guest additions since we're uploading.
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Looking for available port between 5900 and 6000 on 127.0.0.1
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Trying port: 5941
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--vrdeaddress", "127.0.0.1", "--vrdeauthtype", "null", "--vrde", "on", "--vrdeport", "5941"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 No floppy disk, not attaching.
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Looking for available communicator (SSH, WinRM, etc) port between 2222 and 4444
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Trying port: 4040
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 4040)[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--natpf1", "packercomm,tcp,127.0.0.1,4040,,22"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+2018/10/07 20:54:52 ui: [0;32m    virtualbox-iso: Executing: modifyvm packer-centos-6.5-x86_64 --memory 2048[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--memory", "2048"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 ui: [0;32m    virtualbox-iso: Executing: modifyvm packer-centos-6.5-x86_64 --cpus 2[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"modifyvm", "packer-centos-6.5-x86_64", "--cpus", "2"}
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stdout:
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 stderr:
+2018/10/07 20:54:52 ui: [1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+2018/10/07 20:54:52 ui: [0;32m    virtualbox-iso: The VM will be run headless, without a GUI. If you want to
+    virtualbox-iso: view the screen of the VM, connect via VRDP without a password to
+    virtualbox-iso: rdp://127.0.0.1:5941[0m
+2018/10/07 20:54:52 packer: 2018/10/07 20:54:52 Executing VBoxManage: []string{"startvm", "packer-centos-6.5-x86_64", "--type", "headless"}
+2018/10/07 20:54:53 packer: 2018/10/07 20:54:53 stdout: Waiting for VM "packer-centos-6.5-x86_64" to power on...
+2018/10/07 20:54:53 packer: VM "packer-centos-6.5-x86_64" has been successfully started.
+2018/10/07 20:54:53 packer: 2018/10/07 20:54:53 stderr:
+2018/10/07 20:54:53 ui: [1;32m==> virtualbox-iso: Waiting 30s for boot...[0m
+2018/10/07 20:55:23 ui: [1;32m==> virtualbox-iso: Typing the boot command...[0m
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'u', code '1696', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'd', code '20a0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '-', code '0c8c', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'i', code '1797', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Special code 'Press' '<enter>' found, replacing with: &{[1c] [9c]}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'y', code '1595', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'm', code '32b2', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'c', code '2eae', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'p', code '1999', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'h', code '23a3', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'd', code '20a0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'c', code '2eae', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'k', code '25a5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Special code 'Press' '<enter>' found, replacing with: &{[1c] [9c]}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'w', code '1191', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'g', code '22a2', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'h', code '23a3', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'p', code '1999', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ':', code '2a27aaa7', shift true
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '/', code '35b5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '/', code '35b5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '1', code '0282', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '0', code '0b8b', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '0', code '0b8b', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '2', code '0383', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '2', code '0383', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ':', code '2a27aaa7', shift true
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '8', code '0989', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '4', code '0585', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '0', code '0b8b', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '3', code '0484', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '/', code '35b5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'i', code '1797', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'n', code '31b1', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'y', code '1595', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'm', code '32b2', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Special code 'Press' '<enter>' found, replacing with: &{[1c] [9c]}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'c', code '2eae', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'r', code '1393', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '-', code '0c8c', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'i', code '1797', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'n', code '31b1', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '-', code '0c8c', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'd', code '20a0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '/', code '35b5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'd', code '20a0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'v', code '2faf', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '/', code '35b5', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'd', code '20a0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '-', code '0c8c', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'C', code '2a2eaaae', shift true
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'p', code '1999', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'h', code '23a3', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '-', code '0c8c', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'c', code '2eae', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char ' ', code '39b9', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'i', code '1797', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'n', code '31b1', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 's', code '1f9f', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'a', code '1e9e', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char '.', code '34b4', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'y', code '1595', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'm', code '32b2', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'l', code '26a6', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Special code 'Press' '<enter>' found, replacing with: &{[1c] [9c]}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'r', code '1393', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'e', code '1292', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'b', code '30b0', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 'o', code '1898', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Sending char 't', code '1494', shift false
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Special code 'Press' '<enter>' found, replacing with: &{[1c] [9c]}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "1f", "9f", "16", "96", "20", "a0", "18", "98", "39", "b9", "0c", "8c", "17", "97", "1c", "9c", "1f", "9f", "15", "95", "1f", "9f", "14", "94"}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 stdout:
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 stderr:
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "12", "92", "32", "b2", "2e", "ae", "14", "94", "26", "a6", "39", "b9", "1f", "9f", "14", "94", "18", "98", "19", "99", "39", "b9", "1f", "9f"}
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 stdout:
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 stderr:
+2018/10/07 20:55:23 packer: 2018/10/07 20:55:23 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "1f", "9f", "23", "a3", "20", "a0", "34", "b4", "1f", "9f", "18", "98", "2e", "ae", "25", "a5", "12", "92", "14", "94", "1c", "9c", "11", "91"}
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 stdout:
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 stderr:
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "22", "a2", "12", "92", "14", "94", "39", "b9", "23", "a3", "14", "94", "14", "94", "19", "99", "2a", "27", "aa", "a7", "35", "b5", "35", "b5"}
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 stdout:
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 stderr:
+2018/10/07 20:55:24 packer: 2018/10/07 20:55:24 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "02", "82", "0b", "8b", "34", "b4", "0b", "8b", "34", "b4", "03", "83", "34", "b4", "03", "83", "2a", "27", "aa", "a7", "09", "89", "05", "85"}
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stdout:
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stderr:
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "0b", "8b", "04", "84", "35", "b5", "17", "97", "31", "b1", "1f", "9f", "14", "94", "1e", "9e", "26", "a6", "26", "a6", "34", "b4", "15", "95"}
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stdout:
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stderr:
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "32", "b2", "26", "a6", "1c", "9c", "2e", "ae", "18", "98", "13", "93", "12", "92", "18", "98", "1f", "9f", "0c", "8c", "17", "97", "31", "b1"}
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stdout:
+2018/10/07 20:55:25 packer: 2018/10/07 20:55:25 stderr:
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "1f", "9f", "14", "94", "1e", "9e", "26", "a6", "26", "a6", "39", "b9", "0c", "8c", "20", "a0", "39", "b9", "35", "b5", "20", "a0", "12", "92"}
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 stdout:
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 stderr:
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "2f", "af", "35", "b5", "1f", "9f", "20", "a0", "1e", "9e", "39", "b9", "0c", "8c", "2a", "2e", "aa", "ae", "39", "b9", "1e", "9e", "26", "a6"}
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 stdout:
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 stderr:
+2018/10/07 20:55:26 packer: 2018/10/07 20:55:26 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "19", "99", "23", "a3", "1e", "9e", "39", "b9", "0c", "8c", "2e", "ae", "39", "b9", "17", "97", "31", "b1", "1f", "9f", "14", "94", "1e", "9e"}
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stdout:
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stderr:
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "26", "a6", "26", "a6", "34", "b4", "15", "95", "32", "b2", "26", "a6", "1c", "9c", "13", "93", "12", "92", "30", "b0", "18", "98", "18", "98"}
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stdout:
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stderr:
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "keyboardputscancode", "14", "94", "1c", "9c"}
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stdout:
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 stderr:
+2018/10/07 20:55:27 ui: [1;32m==> virtualbox-iso: Using ssh communicator to connect: 127.0.0.1[0m
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 [INFO] Waiting for SSH, up to timeout: 2h46m40s
+2018/10/07 20:55:27 ui: [1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 [INFO] Attempting SSH connection...
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 [DEBUG] handshaking with SSH
+2018/10/07 20:55:27 packer: 2018/10/07 20:55:27 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64111->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:55:34 packer: 2018/10/07 20:55:34 [INFO] Attempting SSH connection...
+2018/10/07 20:55:34 packer: 2018/10/07 20:55:34 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:55:34 packer: 2018/10/07 20:55:34 [DEBUG] handshaking with SSH
+2018/10/07 20:55:34 packer: 2018/10/07 20:55:34 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64116->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:55:41 packer: 2018/10/07 20:55:41 [INFO] Attempting SSH connection...
+2018/10/07 20:55:41 packer: 2018/10/07 20:55:41 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:55:41 packer: 2018/10/07 20:55:41 [DEBUG] handshaking with SSH
+2018/10/07 20:55:41 packer: 2018/10/07 20:55:41 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64120->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:55:48 packer: 2018/10/07 20:55:48 [INFO] Attempting SSH connection...
+2018/10/07 20:55:48 packer: 2018/10/07 20:55:48 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:55:48 packer: 2018/10/07 20:55:48 [DEBUG] handshaking with SSH
+2018/10/07 20:55:48 packer: 2018/10/07 20:55:48 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64122->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:55:55 packer: 2018/10/07 20:55:55 [INFO] Attempting SSH connection...
+2018/10/07 20:55:55 packer: 2018/10/07 20:55:55 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:55:55 packer: 2018/10/07 20:55:55 [DEBUG] handshaking with SSH
+2018/10/07 20:55:55 packer: 2018/10/07 20:55:55 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64124->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:56:02 packer: 2018/10/07 20:56:02 [INFO] Attempting SSH connection...
+2018/10/07 20:56:02 packer: 2018/10/07 20:56:02 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:56:02 packer: 2018/10/07 20:56:02 [DEBUG] handshaking with SSH
+2018/10/07 20:56:02 packer: 2018/10/07 20:56:02 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64126->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:56:09 packer: 2018/10/07 20:56:09 [INFO] Attempting SSH connection...
+2018/10/07 20:56:09 packer: 2018/10/07 20:56:09 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:56:09 packer: 2018/10/07 20:56:09 [DEBUG] handshaking with SSH
+2018/10/07 20:56:09 packer: 2018/10/07 20:56:09 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64129->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:56:16 packer: 2018/10/07 20:56:16 [INFO] Attempting SSH connection...
+2018/10/07 20:56:16 packer: 2018/10/07 20:56:16 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:56:16 packer: 2018/10/07 20:56:16 [DEBUG] handshaking with SSH
+2018/10/07 20:56:16 packer: 2018/10/07 20:56:16 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64131->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:56:23 packer: 2018/10/07 20:56:23 [INFO] Attempting SSH connection...
+2018/10/07 20:56:23 packer: 2018/10/07 20:56:23 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:56:23 packer: 2018/10/07 20:56:23 [DEBUG] handshaking with SSH
+2018/10/07 20:56:23 packer: 2018/10/07 20:56:23 [DEBUG] SSH handshake err: ssh: handshake failed: read tcp 127.0.0.1:64134->127.0.0.1:4040: read: connection reset by peer
+2018/10/07 20:56:30 packer: 2018/10/07 20:56:30 [INFO] Attempting SSH connection...
+2018/10/07 20:56:30 packer: 2018/10/07 20:56:30 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:56:30 packer: 2018/10/07 20:56:30 [DEBUG] handshaking with SSH
+2018/10/07 20:56:52 packer: 2018/10/07 20:56:52 Keyboard interactive challenge:
+2018/10/07 20:56:52 packer: 2018/10/07 20:56:52 -- User:
+2018/10/07 20:56:52 packer: 2018/10/07 20:56:52 -- Instructions:
+2018/10/07 20:56:52 packer: 2018/10/07 20:56:52 -- Question 1: Password:
+2018/10/07 20:56:54 packer: 2018/10/07 20:56:54 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:56:54 packer: 2018/10/07 20:56:54 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:01 packer: 2018/10/07 20:57:01 [INFO] Attempting SSH connection...
+2018/10/07 20:57:01 packer: 2018/10/07 20:57:01 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:01 packer: 2018/10/07 20:57:01 [DEBUG] handshaking with SSH
+2018/10/07 20:57:03 packer: 2018/10/07 20:57:03 Keyboard interactive challenge:
+2018/10/07 20:57:03 packer: 2018/10/07 20:57:03 -- User:
+2018/10/07 20:57:03 packer: 2018/10/07 20:57:03 -- Instructions:
+2018/10/07 20:57:03 packer: 2018/10/07 20:57:03 -- Question 1: Password:
+2018/10/07 20:57:05 packer: 2018/10/07 20:57:05 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain
+2018/10/07 20:57:05 packer: 2018/10/07 20:57:05 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:12 packer: 2018/10/07 20:57:12 [INFO] Attempting SSH connection...
+2018/10/07 20:57:12 packer: 2018/10/07 20:57:12 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:12 packer: 2018/10/07 20:57:12 [DEBUG] handshaking with SSH
+2018/10/07 20:57:15 packer: 2018/10/07 20:57:15 Keyboard interactive challenge:
+2018/10/07 20:57:15 packer: 2018/10/07 20:57:15 -- User:
+2018/10/07 20:57:15 packer: 2018/10/07 20:57:15 -- Instructions:
+2018/10/07 20:57:15 packer: 2018/10/07 20:57:15 -- Question 1: Password:
+2018/10/07 20:57:16 packer: 2018/10/07 20:57:16 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:57:16 packer: 2018/10/07 20:57:16 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:23 packer: 2018/10/07 20:57:23 [INFO] Attempting SSH connection...
+2018/10/07 20:57:23 packer: 2018/10/07 20:57:23 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:23 packer: 2018/10/07 20:57:23 [DEBUG] handshaking with SSH
+2018/10/07 20:57:25 packer: 2018/10/07 20:57:25 Keyboard interactive challenge:
+2018/10/07 20:57:25 packer: 2018/10/07 20:57:25 -- User:
+2018/10/07 20:57:25 packer: 2018/10/07 20:57:25 -- Instructions:
+2018/10/07 20:57:25 packer: 2018/10/07 20:57:25 -- Question 1: Password:
+2018/10/07 20:57:28 packer: 2018/10/07 20:57:28 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:57:28 packer: 2018/10/07 20:57:28 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:35 packer: 2018/10/07 20:57:35 [INFO] Attempting SSH connection...
+2018/10/07 20:57:35 packer: 2018/10/07 20:57:35 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:35 packer: 2018/10/07 20:57:35 [DEBUG] handshaking with SSH
+2018/10/07 20:57:37 packer: 2018/10/07 20:57:37 Keyboard interactive challenge:
+2018/10/07 20:57:37 packer: 2018/10/07 20:57:37 -- User:
+2018/10/07 20:57:37 packer: 2018/10/07 20:57:37 -- Instructions:
+2018/10/07 20:57:37 packer: 2018/10/07 20:57:37 -- Question 1: Password:
+2018/10/07 20:57:40 packer: 2018/10/07 20:57:40 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:57:40 packer: 2018/10/07 20:57:40 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:47 packer: 2018/10/07 20:57:47 [INFO] Attempting SSH connection...
+2018/10/07 20:57:47 packer: 2018/10/07 20:57:47 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:47 packer: 2018/10/07 20:57:47 [DEBUG] handshaking with SSH
+2018/10/07 20:57:49 packer: 2018/10/07 20:57:49 Keyboard interactive challenge:
+2018/10/07 20:57:49 packer: 2018/10/07 20:57:49 -- User:
+2018/10/07 20:57:49 packer: 2018/10/07 20:57:49 -- Instructions:
+2018/10/07 20:57:49 packer: 2018/10/07 20:57:49 -- Question 1: Password:
+2018/10/07 20:57:51 packer: 2018/10/07 20:57:51 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:57:51 packer: 2018/10/07 20:57:51 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:57:58 packer: 2018/10/07 20:57:58 [INFO] Attempting SSH connection...
+2018/10/07 20:57:58 packer: 2018/10/07 20:57:58 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:57:58 packer: 2018/10/07 20:57:58 [DEBUG] handshaking with SSH
+2018/10/07 20:58:00 packer: 2018/10/07 20:58:00 Keyboard interactive challenge:
+2018/10/07 20:58:00 packer: 2018/10/07 20:58:00 -- User:
+2018/10/07 20:58:00 packer: 2018/10/07 20:58:00 -- Instructions:
+2018/10/07 20:58:00 packer: 2018/10/07 20:58:00 -- Question 1: Password:
+2018/10/07 20:58:03 packer: 2018/10/07 20:58:03 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:58:03 packer: 2018/10/07 20:58:03 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:58:10 packer: 2018/10/07 20:58:10 [INFO] Attempting SSH connection...
+2018/10/07 20:58:10 packer: 2018/10/07 20:58:10 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:58:10 packer: 2018/10/07 20:58:10 [DEBUG] handshaking with SSH
+2018/10/07 20:58:12 packer: 2018/10/07 20:58:12 Keyboard interactive challenge:
+2018/10/07 20:58:12 packer: 2018/10/07 20:58:12 -- User:
+2018/10/07 20:58:12 packer: 2018/10/07 20:58:12 -- Instructions:
+2018/10/07 20:58:12 packer: 2018/10/07 20:58:12 -- Question 1: Password:
+2018/10/07 20:58:14 packer: 2018/10/07 20:58:14 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:58:14 packer: 2018/10/07 20:58:14 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:58:21 packer: 2018/10/07 20:58:21 [INFO] Attempting SSH connection...
+2018/10/07 20:58:21 packer: 2018/10/07 20:58:21 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:58:21 packer: 2018/10/07 20:58:21 [DEBUG] handshaking with SSH
+2018/10/07 20:58:23 packer: 2018/10/07 20:58:23 Keyboard interactive challenge:
+2018/10/07 20:58:23 packer: 2018/10/07 20:58:23 -- User:
+2018/10/07 20:58:23 packer: 2018/10/07 20:58:23 -- Instructions:
+2018/10/07 20:58:23 packer: 2018/10/07 20:58:23 -- Question 1: Password:
+2018/10/07 20:58:25 packer: 2018/10/07 20:58:25 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password keyboard-interactive], no supported methods remain
+2018/10/07 20:58:25 packer: 2018/10/07 20:58:25 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:58:32 packer: 2018/10/07 20:58:32 [INFO] Attempting SSH connection...
+2018/10/07 20:58:32 packer: 2018/10/07 20:58:32 [DEBUG] reconnecting to TCP connection for SSH
+2018/10/07 20:58:32 packer: 2018/10/07 20:58:32 [DEBUG] handshaking with SSH
+2018/10/07 20:58:34 packer: 2018/10/07 20:58:34 Keyboard interactive challenge:
+2018/10/07 20:58:34 packer: 2018/10/07 20:58:34 -- User:
+2018/10/07 20:58:34 packer: 2018/10/07 20:58:34 -- Instructions:
+2018/10/07 20:58:34 packer: 2018/10/07 20:58:34 -- Question 1: Password:
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 [DEBUG] SSH handshake err: ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 [DEBUG] Detected authentication error. Increasing handshake attempts.
+2018/10/07 20:58:37 ui error: [1;31m==> virtualbox-iso: Error waiting for SSH: ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain[0m
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 Executing VBoxManage: []string{"controlvm", "packer-centos-6.5-x86_64", "poweroff"}
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stdout:
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 Executing VBoxManage: []string{"storageattach", "packer-centos-6.5-x86_64", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--medium", "none"}
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stdout:
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stderr:
+2018/10/07 20:58:37 ui: [1;32m==> virtualbox-iso: Deregistering and deleting VM...[0m
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 Executing VBoxManage: []string{"unregistervm", "packer-centos-6.5-x86_64", "--delete"}
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stdout:
+2018/10/07 20:58:37 packer: 2018/10/07 20:58:37 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2018/10/07 20:58:37 ui: [1;32m==> virtualbox-iso: Deleting output directory...[0m
+2018/10/07 20:58:37 [INFO] (telemetry) ending virtualbox-iso
+2018/10/07 20:58:37 ui error: [1;31mBuild 'virtualbox-iso' errored: ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain[0m
+2018/10/07 20:58:37 Builds completed. Waiting on interrupt barrier...
+2018/10/07 20:58:37 machine readable: error-count []string{"1"}
+2018/10/07 20:58:37 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2018/10/07 20:58:37 machine readable: virtualbox-iso,error []string{"ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain"}
+2018/10/07 20:58:37 ui error: --> virtualbox-iso: ssh: handshake failed: ssh: unable to authenticate, attempted methods [password keyboard-interactive none], no supported methods remain
+2018/10/07 20:58:37 ui: 
+==> Builds finished but no artifacts were created.
+2018/10/07 20:58:37 [INFO] (telemetry) Finalizing.
+2018/10/07 20:58:37 waiting for all plugin processes to complete...
+2018/10/07 20:58:37 /usr/local/bin/packer: plugin process exited
+2018/10/07 20:58:37 /usr/local/bin/packer: plugin process exited
+2018/10/07 20:58:37 /usr/local/bin/packer: plugin process exited
+2018/10/07 20:58:37 /usr/local/bin/packer: plugin process exited

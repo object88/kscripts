@@ -1,14 +1,25 @@
 {
+  "variables": {
+    "channel": "alpha",
+    "version": "current", 
+    "checksum_type": "md5",
+    "checksum": "4f9f1a01bcacfeececa38a54771602e8"
+  },
   "provisioners": [
-
+    {
+      "type": "file",
+      "source": "http/coreos-setup-environment",
+      "destination": "coreos-setup-environment"
+    },
+    {
+      "type": "file",
+      "source": "http/cloud-config.yml",
+      "destination": "cloud-config.yml"
+    }
   ],
   "builders": [
     {
       "type": "virtualbox-iso",
-      "boot_command": [
-        "<tab> text ks=http://{{ .HTTPID }}:{ .HTTPPort }}/ks.cfg<enter><wait>"
-      ],
-      "boot_wait": "10s",
       "disk_size": 20480,
       "guest_os_type": "Linux26_64",
       "headless": true,
@@ -17,11 +28,36 @@
         "iso/coreos_production_iso_image.iso",
         "https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso"
       ],
-      "iso_checksum_type": "md5",
-      "iso_checksum": "4f9f1a01bcacfeececa38a54771602e8",
+      "iso_checksum_type": "{{ user `checksum_type` }}",
+      "iso_checksum": "{{ user `checksum` }}",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
-      "ssh_port": 22
+      "ssh_port": 22,
+      "ssh_wait_timeout": "10000s",
+      "shutdown_command": "echo 'vagrant' | sudo -S /sbin.halt -h -p",
+      "guest_additions_path": "VBoxGuestAdditions_{{ .Version }}.iso",
+
+      "boot_command": [
+        "sudo -i<enter>",
+        "systemctl stop sshd.socket<enter>",
+        "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/install.yml<enter>",
+        "coreos-install -d /dev/sda -C {{user `channel`}} -c install.yml<enter>",
+        "reboot<enter>"
+      ],
+      "boot_wait": "30s",
+
+      "virtualbox_version_file": ".vbox_version",
+      "vm_name": "packer-centos-6.5-x86_64",
+      "vboxmanage": [
+        [ "modifyvm", "{{ .Name }}", "--memory", "2048" ],
+        [ "modifyvm", "{{ .Name }}", "--cpus", "2" ]
+      ]
+    }
+  ], 
+  "post-processors": [
+    {
+      "output": "builds/VirtualBox-centos65.box",
+      "type": "vagrant"
     }
   ]
 }
