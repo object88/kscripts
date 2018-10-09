@@ -1,6 +1,6 @@
 {
   "variables": {
-    "channel": "alpha",
+    "channel": "stable",
     "version": "current", 
     "checksum_type": "md5",
     "checksum": "4f9f1a01bcacfeececa38a54771602e8"
@@ -20,22 +20,23 @@
   "builders": [
     {
       "type": "virtualbox-iso",
-      "disk_size": 20480,
       "guest_os_type": "Linux26_64",
+      "hard_drive_interface": "sata",
+      "disk_size": 20480,
       "headless": true,
       "http_directory": "http",
       "iso_urls": [
         "iso/coreos_production_iso_image.iso",
-        "https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso"
+        "https://{{user `channel`}}.release.core-os.net/amd64-usr/{{user `version`}}/coreos_production_iso_image.iso"
       ],
       "iso_checksum_type": "{{ user `checksum_type` }}",
       "iso_checksum": "{{ user `checksum` }}",
-      "ssh_username": "vagrant",
-      "ssh_password": "vagrant",
+
       "ssh_port": 22,
+      "ssh_username": "core",
+      "ssh_private_key_file": "ssh",
       "ssh_wait_timeout": "10000s",
-      "shutdown_command": "echo 'vagrant' | sudo -S /sbin.halt -h -p",
-      "guest_additions_path": "VBoxGuestAdditions_{{ .Version }}.iso",
+      "guest_additions_path": "disable",
 
       "boot_command": [
         "sudo -i<enter>",
@@ -45,6 +46,7 @@
         "reboot<enter>"
       ],
       "boot_wait": "30s",
+      "shutdown_command": "sudo -S shutdown -P now",
 
       "virtualbox_version_file": ".vbox_version",
       "vm_name": "packer-centos-6.5-x86_64",
